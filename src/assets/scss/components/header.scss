@@ -121,30 +121,116 @@ margin: 13px 93px 13px 0;
 .header__circle{
     position: absolute;
 }
-@media (min-width:320px) and (max-width:425px){
+.header__menu{
+    width: 42px;
+    height: 4px;
+    border-radius: 4px;
+    background: #CF51CE;
+    visibility: hidden;
+}
+@media (min-width:360px) and (max-width:360px){
     .header__container{
         padding:  0 15px;
     }
     .header__list{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
     .header__logo{
         width: 35px;
         height: 32px;
     }
+    .header__starlogo{
+        font-size: 18px;
+    }
     .header.btn{
         width: 103px;
         height: 36px;
         margin: 10px 0 0 20px;
     }
-    .header__starlogo{
-        font-size: 18px;
+    .header__menu{
+        margin: 8px 0 0 21px;
+        visibility: visible;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 4px;
+            background: #CF51CE;
+            top: 10px;
+            left: 10px;
+            border-radius: 4px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 42px;
+            height: 4px;
+            background: #CF51CE;
+            top: -10px;
+            border-radius: 4px;
+        }
     }
     .header__line,
      .header__text, 
      select,
+    .header__study, 
+    .header__tele,
+    .header__tel,
+    .header.circle{
+        display: none;
+    }
+}
+@media (min-width:768px) and (max-width:768px){
+    .header__container{
+        padding: 0 15px;
+        overflow: hidden;
+    }
+    .header__list{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .header__logo{
+        width: 45px;
+        height: 42px;
+    }
+    .header__starlogo{
+        font-size: 24px;
+    }
+    
+    .header.btn{
+        width: 158px;
+        height: 44px;
+        margin: 10px 0 0 20px;
+    }
+    .header__menu{
+        margin: 30px 0 0 0;
+        visibility: visible;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 4px;
+            background: #CF51CE;
+            top: 10px;
+            left: 10px;
+            border-radius: 4px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 42px;
+            height: 4px;
+            background: #CF51CE;
+            top: -10px;
+            border-radius: 4px;
+        }
+    }
+    select,
     .header__study, 
     .header__tele,
     .header__tel,
