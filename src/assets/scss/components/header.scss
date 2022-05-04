@@ -1,1 +1,124 @@
-.header {}
+.header{
+    max-width: 1280px;
+    margin:  0 auto;
+    position: sticky;
+    top: 0;
+}
+.header.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header__container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    font-family: 'Lato' , sans-serif;
+}
+.header__list{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 30px 0 0 0;
+}
+.header__logo{ 
+    width: 45px;
+    height: 45px;
+    margin: 9px 10px 0 0;
+}
+.header__starlogo{
+    font-weight: 700;
+    font-size: 24.7643px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    color: #54618E;
+    margin: 17px 0 14px 0;
+    cursor: grab;
+    b{
+        color:#CF51CE;
+    }
+    a:hover{
+        color:violet;
+    }
+}
+.header__line{
+    width: 1px;
+    height: 62px;
+    margin: 0 19px 0 15px;
+    background: rgba(51, 26, 47, 0.5);
+}
+.header__text{
+    max-width: 158px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: rgba(51, 26, 47, 0.9);
+    margin: 10px 28px 10px 0;
+}
+select{
+    max-width: 115px;
+    height: 35px;
+    border: none;
+    margin: 13px 40px 13px 0px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #331A2F;
+}
+.header__study{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: #331A2F;
+    margin: 13px 137px 13px 0;
+    a:hover{
+        color: violet;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+.header__tele{
+    max-width: 15px;
+    height: 15px;
+    margin: 23px 5px 23px 0;
+}
+.header__tel{
+font-weight: 400;
+font-size: 18px;
+line-height: 35px;
+color: #331A2F;
+margin: 13px 93px 13px 0;
+ &:hover{
+    color: violet;
+    cursor: pointer;
+ }
+}
+
+.header.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+    width: 152px;
+    background: #CF51CE;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    
+    cursor: pointer;
+    text-align: center;
+    a{
+        font-weight: 500;
+        text-decoration: none;
+        color:  #fff;
+        margin: 0px 0 0px 14px;
+    }
+    a:hover{
+        color: black;
+    }
+    
+}
+.header__circle{
+    position: absolute;
+}
