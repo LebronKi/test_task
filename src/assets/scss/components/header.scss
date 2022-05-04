@@ -1,11 +1,10 @@
 .header{
     max-width: 1280px;
     margin:  0 auto;
-    position: sticky;
-    top: 0;
+    position: relative;
 }
 .header.circle {
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
 }
@@ -121,4 +120,35 @@ margin: 13px 93px 13px 0;
 }
 .header__circle{
     position: absolute;
+}
+@media (min-width:320px) and (max-width:425px){
+    .header__container{
+        padding:  0 15px;
+    }
+    .header__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__logo{
+        width: 35px;
+        height: 32px;
+    }
+    .header.btn{
+        width: 103px;
+        height: 36px;
+        margin: 10px 0 0 20px;
+    }
+    .header__starlogo{
+        font-size: 18px;
+    }
+    .header__line,
+     .header__text, 
+     select,
+    .header__study, 
+    .header__tele,
+    .header__tel,
+    .header.circle{
+        display: none;
+    }
 }

@@ -70,3 +70,87 @@ padding: 30px 0 85px 0;
     color: rgba(51, 26, 47, 0.8);
     margin: 0 0 0px 22px;
 }
+
+@media (min-width:360px) and (max-width:360px){
+    .study__container{
+        padding: 0 15px;
+    }
+    .study__title{
+        font-size: 24px;
+        line-height: 150%;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0 ;
+            right: 0px;
+            transform: translate(-95px);
+            width: 140px;
+            height: 6px;
+            background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
+            border-radius: 5px;
+        
+    }}
+    .study__subtitle{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        width: 330px;
+        color: rgba(51, 26, 47, 0.8);
+        margin: 25px 0 50px 0;
+        padding: 0;
+    }
+    .study__row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 69px 0;
+    }
+    .study-item{
+        max-width: 260px;
+        text-align: center;
+        margin: 0 0 40px 0;
+        
+    }
+    .study-item__text,
+    .study-item__title{
+        margin: 0;
+    }
+}
+@media (min-width:768px) and (max-width:768px){
+    .study__container{
+        padding: 0 15px;
+    }
+    .study__title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 64px;
+        text-align: center;
+        color: #331A2F;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0 ;
+            right: 0px;
+            transform: translate(-33px);
+            width: 217px;
+            height: 6px;
+            background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
+            border-radius: 5px;
+        
+    }}
+    .study__row{
+        display: flex;
+        justify-content: center;
+        gap:  60px;
+        margin: 0 0 69px 0;
+    }
+    .study-item{
+        max-width: 255px;
+        margin: 0;
+
+    }
+    .study-item__text,
+    .study-item__title{
+        margin: 0;
+    }
+}
